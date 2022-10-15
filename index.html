@@ -1,0 +1,166 @@
+<!--I used Jeff's Bootstrap video to create this website along with 
+the bootstrap code he used from github -->
+
+
+<!-- main questions for hours:
+
+    text boxes: size, getting all text inside
+    header: add info (come text not showing up)
+    text: center title (worked before now doesn't) text align
+    text: changing color of some text not all
+    footer: center text in footer
+    spacing: mobing things around how/where to position things
+
+    use flex for bottom three elements
+
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="title_stuff">
+        <div class="d-flex flex-column background justify-content-center align-items-center">
+            <h3 class="display 1"> PROVIDENCE MAIN POST OFFICE</h3>
+            <h6 class="text-center"> The Providence Main Post Office is located in Providence, RI.
+                You are able to submit your United States passport application at this location for processing.
+                The usual waiting time to get your passport is 4 to 6 weeks when
+                submitting from the Providence Main Post Office.</h6>
+        </div>
+    </div>
+
+    <!-- Need to get everything centered-->
+    <!-- Ideally one set of hours can sort everything out that is funny atm-->
+    <section id="topBar">
+        <div class="d-flex text-light" style="align-content: center;">
+            <img src="Screen Shot 2022-10-06 at 9.33.26 PM.png" alt="passports and visa logo"
+                style="width: 6rem; height: 3.5rem">
+            <div style="padding-left: .5rem; padding-right: .5rem;">Passports and Visas<br />24 Corliss Street. <br>
+                Providence, RI 2904</div>
+            <div style="flex: 1 1 0%;"></div>
+            <div class="text-light">Contact us: (844) 804 6223</div>
+        </div>
+    </section>
+
+    <div id="topwrapper">
+
+        <section id="hours">
+            <div>
+                <h5>
+                    Hours:
+                </h5>
+                <h6>
+                    Monday-Friday: 8:00-18:00 <br> <br>
+                    Saturday: 8:00-14:00 <br> <br>
+                    Sunday: Closed<br> <br>
+                </h6>
+
+            </div>
+        </section>
+
+        <!-- want this section next to the hours section -->
+        <section id="map">
+            <div>
+                <div class="d-flex flex-row background justify-content-center align-items-right">
+                    <img src="Screen Shot 2022-10-15 at 5.34.57 PM.png" alt="Interactive Map"
+                        style="width: 18rem; height: 16rem">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- button: <a href="#storyboard" class="btn text-light">Jump to Storyboard!</a> -->
+        <!-- button doesnt actually go anywhere -->
+
+        <section id="question_and_button">
+            <div class="row">
+                <div class="col">
+                    <p style="color: rgb(209, 157, 60)">Need your Passport in less than 4-6 weeks?</p>
+                </div>
+                <div class="col">
+                    <button type="button" class="button">Get Expedited Passport</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p style="color: rgb(209, 157, 60)">Need an Appointment?</p>
+                </div>
+                <div class="col">
+                    <button type="button" class="button">Schedule an Appointment</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="boxwrapper">
+        <section class="infobox">
+            <h5>
+                Local Offices:
+            </h5>
+            <!--could make these buttons/simple links!!-->
+            <p>
+                Washington DC <br>
+                Atlanta <br>
+                Las Vegas <br>
+                Miami <br>
+                Denver <br>
+            </p>
+        </section>
+
+        <section class="infobox">
+            <p>
+            <h5>
+                Passport Services:
+                <!-- how to get the heading in the box as well-->
+            </h5>
+
+            New Passport <br>
+            Passport Renewal <br>
+            Providence Passport <br>
+            Providence Acceptance Agents <br>
+            Providence Vital Records <br>
+            </p>
+        </section>
+
+        <section class="infobox">
+            <h5>
+                Visa Services:
+            </h5>
+            <p>
+                Providence Brazil Visa <br>
+                Providence China Visa <br>
+                Providence Russia Visa <br>
+                Providence India Visa <br>
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <section id="footer">
+            <div class="d-flex" style="align-content: center;">
+                <div> 24 Corliss Street. <br>Providence, RI 2904</div>
+                <div style="flex: 1 1 0%;"></div>
+                <div>FAQ</div>
+                <div style="flex: 1 1 0%;"></div>
+                <div class="text">Contact us: (844) 804 6223 </div>
+            </div>
+        </section>
+    </footer>
+    <!-- how to make this fit to text/be thinner-->
+
+
+    <!-- use this for text box outlines in css: https://www.html.am/html-codes/textboxes/textbox-border.cfm#:~:text=You%20can%20use%20the%20CSS,covers%20all%20of%20these%20anyway.-->
+    <!--want box to outline this-->
+    <!--footer and then organize-->
+
+    <!--Used W3schools to align images-->
+</body>
+
+</html>
