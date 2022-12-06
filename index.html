@@ -1,19 +1,5 @@
 <!--I used Jeff's Bootstrap video to create this website along with 
-the bootstrap code he used from github -->
-
-
-<!-- main questions for hours:
-
-    text boxes: size, getting all text inside
-    header: add info (come text not showing up)
-    text: center title (worked before now doesn't) text align
-    text: changing color of some text not all
-    footer: center text in footer
-    spacing: mobing things around how/where to position things
-
-    use flex for bottom three elements
-
--->
+the bootstrap code he used from github-->
 <!doctype html>
 <html lang="en">
 
@@ -22,146 +8,204 @@ the bootstrap code he used from github -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <title>Responsive Redesign</title>
 </head>
 
 <body>
 
-    <div class="title_stuff">
-        <div class="d-flex flex-column background justify-content-center align-items-center">
-            <h3 class="display 1"> PROVIDENCE MAIN POST OFFICE</h3>
-            <h6 class="text-center"> The Providence Main Post Office is located in Providence, RI.
-                You are able to submit your United States passport application at this location for processing.
-                The usual waiting time to get your passport is 4 to 6 weeks when
-                submitting from the Providence Main Post Office.</h6>
+
+    <!-- need to seriously style and organize and recolor-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--change this theme later-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Responsive Redesign</a>
+            <!-- <div class="collapse navbar-collapse"> -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#usability">Identifying Usability Problems</a></li>
+                <li class="nav-item"><a class="nav-link" href="#accessibility">Accessibility</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lofi">Lofi sketches</a></li>
+                <li class="nav-item"><a class="nav-link" href="#visual">Visual Guide</a></li>
+                <li class="nav-item"><a class="nav-link" href="#hifi">Hifi sketches</a></li>
+                <li class="nav-item"><a class="nav-link" href="#website">New Website</a></li>
+                <!--setting up links/buttons with links-->
+
+            </ul>
+            <!-- </div> -->
         </div>
+    </nav>
+
+    <div class="d-flex flex-column background justify-content-center align-items-center">
+        <h3 class="text-light display 1"> CSCI 1300 Responsive Redesign</h3>
+        <h6> Purpose/Context: To redesign a website that was previously poorly designed. Goals are to improve responsiveness in varying screen sizes and increase accessibilty features. </h6>
+        <p>
+        Design Choices: I chose to display the project in a single page scroll format. The menu bar allows you to jump
+        quickly to the desired location. This layout allows for simplicity and is easy to follow. While it may
+        not be the prettiest design, it is simple and efficient and allows the reader
+        to focus on the work iteself and not all of extraneous pieces of the site. 
+
+        Lessons Learned: This project allowed me to gain valualbe insight into the accessibility and 
+        usablity of online platforms. I was able to make a previously difficult to read website more readable.
+        I can also take away conepts and strategies that had both positvie and negative results that can be applied
+        to my work in the future. 
+        </p>
+        <h4 class="text-light">Passports and Visas</h4>
+        <button class="btn btn-success"
+            onclick=" window.open('https://web.archive.org/web/20211207152429/https://www.passportsandvisas.com/local-passport/ri/providence/providence-main-post-office','_blank')">
+            Old Site
+        </button>
     </div>
 
-    <!-- Need to get everything centered-->
-    <!-- Ideally one set of hours can sort everything out that is funny atm-->
-    <section id="topBar">
-        <div class="d-flex text-light" style="align-content: center;">
-            <img src="Screen Shot 2022-10-06 at 9.33.26 PM.png" alt="passports and visa logo"
-                style="width: 6rem; height: 3.5rem">
-            <div style="padding-left: .5rem; padding-right: .5rem;">Passports and Visas<br />24 Corliss Street. <br>
-                Providence, RI 2904</div>
-            <div style="flex: 1 1 0%;"></div>
-            <div style="padding-right: 2rem; padding-top: 1rem"> <img src="Screen Shot 2022-10-16 at 10.31.45 AM.png"
-                    alt="menu line" style="width: 2rem; height: 2rem"> Contact us: (844) 804 6223</div>
+    <section id="overview">
+        <div>
+            <h3 class="text-center">
+                My Website: Providence Passports and Visas
+                <br>
+            </h3>
+
+            <div class="d-flex flex-row background justify-content-center">
+                <!-- pics of old site here-->
+                <img src="oldtop.png" alt="top of old" site style="width: 30rem; height: 25rem; padding: 2rem">
+                <!-- resize pictures-->
+                <img src="oldbottom.png" alt="top of old" site style="width: 30rem; height: 25rem; padding: 2rem">
+                <!-- resize pictures-->
+                <img src="Screen Shot 2022-10-15 at 5.59.37 PM.png" alt="top of old" site style="width: 30rem; height: 25rem; padding: 2rem">
+                <!-- resize pictures-->
+            </div>
+            <div class="text-center">I chose this website because of its poor design elements including excess white
+                space, overlapping elements, poor color choice, and overall poor/confusing layout (see examples above).
+                I have had problems using this site in the past.
+            </div>
+
         </div>
     </section>
 
-    <div id="topwrapper">
-
-        <section id="hours">
-            <div>
-                <h5>
-                    Hours:
-                </h5>
-                <h6>
-                    Monday-Friday: 8:00-18:00 <br> <br>
-                    Saturday: 8:00-14:00 <br> <br>
-                    Sunday: Closed<br> <br>
-                </h6>
-
-            </div>
-        </section>
-
-        <!-- want this section next to the hours section -->
-        <section id="map">
-            <div>
-                <div class="d-flex flex-row background justify-content-center align-items-right">
-                    <img src="Screen Shot 2022-10-15 at 5.34.57 PM.png" alt="Interactive Map"
-                        style="width: 18rem; height: 16rem">
-                </div>
-
-            </div>
-        </section>
-
-        <!-- button: <a href="#storyboard" class="btn text-light">Jump to Storyboard!</a> -->
-        <!-- button doesnt actually go anywhere -->
-
-        <section id="question_and_button">
-            <div class="row">
-                <div class="col">
-                    <p style="color: rgb(209, 157, 60)">Need your Passport in less than 4-6 weeks?</p>
-                </div>
-                <div class="col">
-                    <button type="button" class="button">Get Expedited Passport</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p style="color: rgb(209, 157, 60)">Need an Appointment?</p>
-                </div>
-                <div class="col">
-                    <button type="button" class="button">Schedule an Appointment</button>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <div id="boxwrapper">
-        <section class="infobox">
-            <h5>
-                Local Offices:
-            </h5>
-            <!--could make these buttons/simple links!!-->
+    <section id="usability">
+        <div>
+            <h3>
+                Usability Problems:
+            </h3>
             <p>
-                Washington DC <br>
-                Atlanta <br>
-                Las Vegas <br>
-                Miami <br>
-                Denver <br>
+            <ul>
+                <b>Usability:</b>
+                <li>This site is somewhat useful depending on the goal. It is also tough to use because of the three
+                    phone numbers and poorly lit coloring on some parts of the page.</li>
+                <b>Learnability:</b>
+                <li> Currently the learnability is very poor as buttons are poorly arranged and information is hard to
+                    find. Additionally the multiple phone numbers are confusing.
+                </li>
+                <b>Memorability:</b>
+                <li>Nothing sticks out when it comes to memorability. Everytime you go back to the site, it feels like
+                    you have never seen the webpage before.
+                </li>
+                <b>Conceptual Model:</b>
+                <li>I do not think the designer of this website had the user in mind. It is very difficult to navigate
+                    and not at all intuitive.
+                </li>
+                <b>Specific Problems:</b>
+                <li>There are multiple poorly laid out phone numbers scattered throughout the page.</li>
+                <li>There is no link/button to make an appointment even when that is necessary for some people (for
+                    example if your last passport was issued before your 16th birthday or you need your first passport.
+                </li>
+                <li>There is no information on the actual process of getting a new passport without multiple clicks
+                </li>
+                <li>In a small window the map covers the hours.
+                </li>
+                <li>There are no hours listed for Sunday.
+                </li>
+                <li>There is an excess of white space at the bottom of the page.
+                </li>
+                <li>Overall, there is a very poor layout with poor color and spacing elements.
+                </li>
+                <li>When you hover over the buttons, they barely change color which is hard to see.
+                </li>
+                <li>The site contains links that are not clickable (passports and visas.com)
+                </li>
+            </ul>
             </p>
-        </section>
+        </div>
+    </section>
 
-        <section class="infobox">
+    <section id="accessibility">
+        <div>
             <p>
-            <h5>
-                Passport Services:
-                <!-- how to get the heading in the box as well-->
-            </h5>
-
-            New Passport <br>
-            Passport Renewal <br>
-            Providence Passport <br>
-            Providence Acceptance Agents <br>
-            Providence Vital Records <br>
+                Overall, there were 38 accessibility errors and 10 alerts which are concerning when it comes to
+                accessibility.
+                Most of the errors had to do with links. There were 33 contrast errors surrounding links which would
+                make it very hard for users to read the site. Additionally, many images had the same alternative text
+                which tells me that it is not descriptive enough and reflects poorly on accessibility. Additionally,
+                there were only three features that seemed to improve accessibility and they were in regards to language
+                (however the button to change languages was not obvious). Overall, I agree with the detected problems as
+                the links are hard to distinguish and the features are hard to find.
             </p>
-        </section>
-
-        <section class="infobox">
-            <h5>
-                Visa Services:
-            </h5>
-            <p>
-                Providence Brazil Visa <br>
-                Providence China Visa <br>
-                Providence Russia Visa <br>
-                Providence India Visa <br>
-            </p>
-        </section>
-    </div>
-
-    <footer>
-        <section id="footer">
-            <div class="d-flex" style="align-content: center;">
-                <div> 24 Corliss Street. <br>Providence, RI 2904</div>
-                <div style="flex: 1 1 0%;"></div>
-                <div>FAQ</div>
-                <div style="flex: 1 1 0%;"></div>
-                <div class="text">Contact us: (844) 804 6223 </div>
-            </div>
-        </section>
-    </footer>
-    <!-- how to make this fit to text/be thinner-->
-
-
-    <!-- use this for text box outlines in css: https://www.html.am/html-codes/textboxes/textbox-border.cfm#:~:text=You%20can%20use%20the%20CSS,covers%20all%20of%20these%20anyway.-->
-    <!--want box to outline this-->
-    <!--footer and then organize-->
+        </div>
+    </section>
 
     <!--Used W3schools to align images-->
+    <section id="lofi">
+        <div>
+            <h3>
+                Lofi Sketches:
+            </h3>
+            <div class="d-flex background justify-content-center align-items-center">
+                <img src="lofi_desktop.png" alt="lofi desktop sketch"
+                    style="margin: 10px 10px 10px 10px; width: 40rem; height: 30rem">
+                <img src="lofi_tablet.png" alt="lofi tablet sketch"
+                    style="margin: 10px 10px 10px 10px; width: 35rem; height: 35rem">
+                <img src="lofi_phone.png" alt="lofi phone sketch"
+                    style="margin: 10px 10px 10px 10px; width: 35rem; height: 35rem">
+            </div>
+        </div>
+    </section>
+
+    <section id="visual">
+        <div>
+            <h3>
+                Visual Design Guide:
+            </h3>
+            <div class="d-flex flex-column background justify-content-center align-items-center">
+                <img src="visual_design.png" alt="visual design guide" style="width: 45rem; height: 35rem">
+            </div>
+            <!--resize and reformat-->
+
+        </div>
+    </section>
+    <section id="hifi">
+        <div>
+            <h3>
+                Hifi Sketches:
+                <!-- make this layout/style match lofi-->
+            </h3>
+            <div class="d-flex background justify-content-center align-items-center">
+                <img src="hifi_desktop.png" alt="hifi desktop sketch"
+                    style="margin: 10px 10px 10px 10px; width: 40rem; height: 30rem">
+                <img src="hifi_tablet.png" alt="hifi tablet sketch"
+                    style="margin: 10px 10px 10px 10px; width: 43rem; height: 35rem">
+                <img src="hifi_phone.png" alt="hifi phone sketch"
+                    style="margin: 10px 10px 10px 10px; width: 45rem; height: 35rem">
+            </div>
+
+        </div>
+    </section>
+    <section id="website">
+        <div>
+            <h3 class="text-center">
+                New Website:
+            </h3>
+            <div class="d-flex flex-column background justify-content-center align-items-center">
+                <button class="btn btn-success"
+                    onclick=" window.open('https://rainycloud123.github.io/responsive_redesign_site/','_blank')"> New
+                    Site
+                </button>
+            </div>
+            <div> <br> </div>
+            <div class="d-flex flex-column background justify-content-center align-items-center">
+                <img src="new_website_pic.png" alt="screenshot of improved website" style="width: 60rem; height: 40rem">
+            </div>
+
+        </div>
+    </section>
 </body>
 
 </html>
